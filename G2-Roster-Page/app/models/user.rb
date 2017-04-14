@@ -12,5 +12,4 @@ class User < ApplicationRecord
 
   # From Truthy
   # @opened_uri[:roster] = JSON.parse(open(roster, 'Accept-Encoding' => '') {|f| f.read})
-  end
 end
