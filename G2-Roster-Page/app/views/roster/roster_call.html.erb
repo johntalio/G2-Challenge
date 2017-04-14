@@ -1,0 +1,10 @@
+<h1>G2 Crowd Team Roster</h1>
+
+<% @roster.each do |r| %>
+  <ul>
+    <%= r["name"] %><br>
+    <%= r["title"] %><br>
+    <%= r["bio"] %><br>
+    Want to work with <%= r["name"] %>?
+  </ul>
+<% end %>
