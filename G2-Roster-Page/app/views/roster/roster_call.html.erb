@@ -1,10 +1,16 @@
-<h1>G2 Crowd Team Roster</h1>
+<div class="roster-container">
+  <div class="roster-header">
+    G2 Crowd Team Roster
+  </div>
 
-<% @roster.each do |r| %>
-  <ul>
-    <%= r["name"] %><br>
-    <%= r["title"] %><br>
-    <%= r["bio"] %><br>
-    Want to work with <%= r["name"] %>?
-  </ul>
-<% end %>
+  <div>
+    <% @roster.each do |r| %>
+      <ul class="roster-data">
+        <span class="roster-name"><%= r["name"] %></span><br>
+        <span class="roster-title"><%= r["title"] %></span><br>
+        <span class="roster-bio"><%= r["bio"] %></span><br><br>
+        <span class="roster-vote"><strong>Want to work with <%= r["name"] %></strong></span>?
+      </ul>
+    <% end %>
+  </div>
+</div>
