@@ -4,14 +4,14 @@
   </div>
 
   <div class="roster-data">
-    <% @roster.each do |r| %>
+    <% @users.each do |user| %>
       <ul class="roster-data-list">
-        <span class="roster-image"><%= image_tag(r["image_url"], size: "200x200") %></span>
-        <span class="roster-name"><%= r["name"] %></span><br><br>
-        <span class="roster-title"><%= r["title"] %></span><br><br>
-        <span class="roster-bio"><%= r["bio"] %></span><br><br>
-        <span class="roster-vote"><strong>Want to work with <%= r["name"] %>?</strong></span><br>
-        <span class="vote-count"><%=  %> people have said Yes!</span>
+        <span class="roster-image"><%= image_tag(user.image_url, size: "200x200") %></span>
+        <span class="roster-name"><%= user.name %></span><br><br>
+        <span class="roster-title"><%= user.title %></span><br><br>
+        <span class="roster-bio"><%= user.bio %></span><br><br>
+        <span class="roster-vote"><strong>Want to work with <%= user.name %>?</strong></span><br>
+        <span class="vote-count"><%= user.vote_count %> people have said Yes!</span>
       </ul>
     <% end %>
   </div>
