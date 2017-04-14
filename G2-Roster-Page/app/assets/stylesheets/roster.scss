@@ -2,24 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.roster-header {
+.roster-container {
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
+}
+
+.roster-header {
   font-size: 30px;
   color: #E7581C;
   padding-top: 10px;
-}
-
-.roster-data {
-  font-family: "Roboto", sans-serif;
-  font-weight: lighter;
 }
 
 .roster-data-list {
   border-top: solid lightgrey;
   border-width: 1px;
   padding-top: 2%;
-  padding-bottom: 4%;
+  overflow: auto;
 }
 
 .roster-image {
