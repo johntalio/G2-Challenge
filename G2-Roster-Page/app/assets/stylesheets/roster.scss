@@ -8,15 +8,18 @@
 }
 
 .roster-header {
+  padding-top: 7px;
+  padding-bottom: 7px;
   font-size: 30px;
   color: #E7581C;
-  padding-top: 10px;
 }
 
-.roster-data-list {
+.roster-data-container {
+  display: inline-block;
   border-top: solid lightgrey;
   border-width: 1px;
   padding-top: 2%;
+  padding-bottom: 3%;
   overflow: auto;
 }
 
@@ -27,14 +30,23 @@
 }
 
 .roster-name {
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 25px;
   font-size: 20px;
 }
 
 .roster-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 25px;
   font-size: 15px;
 }
 
 .roster-bio {
+  margin-top: 0;
+  margin-bottom: 0;
+  height: auto;
   font-size: 13px;
 }
 
@@ -44,4 +56,8 @@
 
 .vote-count {
   font-size: 12px;
+}
+
+.button {
+  display: inline-block;
 }
