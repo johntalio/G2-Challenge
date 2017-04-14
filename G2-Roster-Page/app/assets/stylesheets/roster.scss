@@ -10,15 +10,22 @@
   padding-top: 10px;
 }
 
-.roster-data-container {
-  border-top: solid lightgrey;
-  border-width: 1px;
-  padding-top: 10px;
-}
-
 .roster-data {
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
+}
+
+.roster-data-list {
+  border-top: solid lightgrey;
+  border-width: 1px;
+  padding-top: 2%;
+  padding-bottom: 4%;
+}
+
+.roster-image {
+  float: left;
+  clear: left;
+  padding-right: 15px;
 }
 
 .roster-name {

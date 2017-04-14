@@ -5,7 +5,8 @@
 
   <div class="roster-data">
     <% @roster.each do |r| %>
-      <ul class="roster-data-container">
+      <ul class="roster-data-list">
+        <span class="roster-image"><%= image_tag(r["image_url"], size: "200x200") %></span>
         <span class="roster-name"><%= r["name"] %></span><br><br>
         <span class="roster-title"><%= r["title"] %></span><br><br>
         <span class="roster-bio"><%= r["bio"] %></span><br><br>
