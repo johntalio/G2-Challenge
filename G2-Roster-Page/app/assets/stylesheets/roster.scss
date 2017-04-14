@@ -10,31 +10,29 @@
   padding-top: 10px;
 }
 
-.roster-data {
+.roster-data-container {
   border-top: solid lightgrey;
   border-width: 1px;
   padding-top: 10px;
 }
 
-.roster-name {
+.roster-data {
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
+}
+
+.roster-name {
   font-size: 20px;
 }
 
 .roster-title {
-  font-family: "Roboto", sans-serif;
-  font-weight: lighter;
   font-size: 15px;
 }
 
 .roster-bio {
-  font-family: "Roboto", sans-serif;
-  font-weight: lighter;
   font-size: 13px;
 }
 
 .roster-vote {
-  font-family: "Roboto", sans-serif;
   font-size: 13px;
 }
