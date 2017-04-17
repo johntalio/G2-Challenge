@@ -3,7 +3,6 @@
 $(document).ready(function() {
   $(".roster-container").on("click", ".button_to", function(event) {
     event.preventDefault();
-    console.log("bithc")
     var $form = $(this);
     var method = $form.attr("method");
     var url = $form.attr("action");
@@ -12,6 +11,7 @@ $(document).ready(function() {
       url: url
     }).done(function(response){
       console.log("hi", response)
+      $form.parent().find("user.vote_count").html(response)
     })
   });
 });
