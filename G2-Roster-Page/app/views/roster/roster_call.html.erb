@@ -10,7 +10,7 @@
         <p class="roster-name"><%= user.name %></p>
         <p class="roster-title"><%= user.title %></p>
         <p class="roster-bio"><%= user.bio %></p><br>
-        <span class="roster-vote"><strong>Want to work with <%= user.name %>?</strong></span><span class="button"><%= button_to 'Yes!', html_options: :disabled %></span><br>
+        <span class="roster-vote"><strong>Want to work with <%= user.name %>?</strong></span><span class="button"><%= button_to 'Yes!', {:controller => "roster", :action => "create", :user_id => user.id}, :method => :post, :remote => true %></span><br>
         <span class="vote-count"><%= user.vote_count %> people have said Yes!</span>
       </div>
     <% end %>
