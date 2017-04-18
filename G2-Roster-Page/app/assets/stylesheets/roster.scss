@@ -52,6 +52,7 @@
 
 .roster-vote {
   font-size: 13px;
+  padding-right: 5px;
 }
 
 .vote-count {
@@ -62,7 +63,9 @@
   font-size: 12px;
 }
 
-.button {
-  background-position: url('thumbs-up.svg');
+.vote-link {
+  background-image: url('thumbs-up.svg');
+  background-repeat: no-repeat;
+  padding-left: 20px;
   display: inline-block;
 }
