@@ -10,8 +10,8 @@
         <p class="roster-name"><%= user.name %></p>
         <p class="roster-title"><%= user.title %></p>
         <p class="roster-bio"><%= user.bio %></p><br>
-        <span class="roster-vote"><strong>Want to work with <%= user.name %>?</strong></span><span class="button"><%= button_to 'Yes!', {:controller => "roster", :action => "create", :user_id => user.id}, :method => :post, :remote => true %></span><br>
-        <span class="vote-count"><%= user.vote_count %> people have said Yes!</span>
+        <span class="roster-vote"><strong>Want to work with <%= user.name %>?</strong></span><span class="button"><%= link_to "Yes!", {:controller => "roster", :action => "create", :user_id => user.id}, :method => :post, :remote => true %></span><br>
+        <span class="vote-count" id="<%= user.id %>"><%= user.vote_count %></span> <span class="vote-exclaim">people have said Yes!</span>
       </div>
     <% end %>
   </div>
